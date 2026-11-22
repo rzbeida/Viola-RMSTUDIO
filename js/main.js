@@ -44,4 +44,15 @@ function toggleLanguage() {
 
         currentLanguage = "en";
     }
+    window.addEventListener("scroll", () => {
+
+    const hero = document.querySelector(".hero");
+
+    let offset = window.pageYOffset;
+
+    hero.style.backgroundPositionY =
+        offset * 0.4 + "px";
+
+});
 }
+
