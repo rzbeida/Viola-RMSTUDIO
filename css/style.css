@@ -37,6 +37,9 @@ nav{
     font-weight:bold;
     letter-spacing:2px;
         color:#f1c8df;
+            text-shadow:
+    0 3px 15px rgba(244,192,221,.35);
+
 
 }
 
