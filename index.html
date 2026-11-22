@@ -3,80 +3,141 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Viola RMSTUDIO</title>
+    <title>Viola RMSTUDIO</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
 
-<nav>
+    <!-- Navigation -->
 
-<div class="logo">
-VIOLA RMSTUDIO
-</div>
+    <nav>
 
-<ul>
+        <div class="logo">
+            VIOLA RMSTUDIO
+        </div>
 
-<li><a href="#">Home</a></li>
+        <ul>
 
-<li><a href="#">Gallery</a></li>
+            <li><a href="#">Home</a></li>
 
-<li><a href="#">Collections</a></li>
+            <li><a href="#">Gallery</a></li>
 
-<li><a href="#">About</a></li>
+            <li><a href="#">Collections</a></li>
 
-<li><a href="#">Contact</a></li>
-<li>
-    <a href="#" id="langBtn" onclick="toggleLanguage()">
-        AR
-    </a>
-</li>
-</ul>
+            <li><a href="#">Licensing</a></li>
 
-</nav>
+            <li><a href="#">About</a></li>
 
-<section class="hero">
+            <li><a href="#">Contact</a></li>
 
-<div class="light-effect"></div>
+            <li>
+                <a href="#" id="langBtn" onclick="toggleLanguage()">
+                    AR
+                </a>
+            </li>
 
-<div class="hero-brand">
+        </ul>
 
-</div>
-<h2 id="heroTitle">
-Where the beauty of every moment
-becomes a timeless work of art.
-</h2>
+    </nav>
 
-<p id="heroText">
-Professional Photography
-and Fine Art Prints
-</p>
+    <!-- Hero Section -->
 
-<button id="galleryBtn">
-Explore Gallery
-</button>
+    <section class="hero">
 
-</section>
+        <div class="light-effect"></div>
 
-<footer>
-    <p>
-        © 2027 VIOLA RMSTUDIO
-       
-        All Rights Reserved<br>
-        
-    </p>
-</footer>
+        <h2 id="heroTitle">
+            Where the beauty of every moment
+            becomes a timeless work of art.
+        </h2>
 
-<script src="js/main.js"></script>
+        <p id="heroText">
+            Professional Photography
+            and Fine Art Prints
+        </p>
+
+        <a href="#collections"
+           class="explore-btn"
+           id="galleryBtn">
+
+            Explore Gallery
+
+        </a>
+
+    </section>
+
+    <!-- Featured Collections -->
+
+    <section id="collections" class="collections">
+
+        <h2>
+            Featured Collections
+        </h2>
+
+        <div class="collection-grid">
+
+            <div class="collection-card">
+
+                <h3>Portrait</h3>
+
+                <p>
+                    Fine Art Photography
+                </p>
+
+            </div>
+
+            <div class="collection-card">
+
+                <h3>Nature</h3>
+
+                <p>
+                    Landscape Collection
+                </p>
+
+            </div>
+
+            <div class="collection-card">
+
+                <h3>Street</h3>
+
+                <p>
+                    Urban Life Stories
+                </p>
+
+            </div>
+
+            <div class="collection-card">
+
+                <h3>Travel</h3>
+
+                <p>
+                    Adventure Collection
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2027 VIOLA RMSTUDIO • All Rights Reserved
+        </p>
+
+    </footer>
+
+    <script src="js/main.js"></script>
 
 </body>
-</html>
 
+</html>
