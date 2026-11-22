@@ -91,5 +91,22 @@ background:#c8aa6e;
 border:none;
 
 cursor:pointer;
+html[dir="rtl"]{
+
+text-align:right;
+
+}
+
+html[dir="rtl"] nav ul{
+
+flex-direction:row-reverse;
+
+}
+
+html[dir="rtl"] .hero{
+
+direction:rtl;
+
+}
 
 }

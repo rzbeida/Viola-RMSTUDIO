@@ -1,3 +1,4 @@
+
 console.log("Viola RMSTUDIO Loaded");
 let currentLanguage = "en";
 
@@ -9,6 +10,7 @@ function toggleLanguage() {
         document.documentElement.dir = "rtl";
 
         document.getElementById("heroTitle").innerHTML =
+
             "حيث يتحول جمال كل لحظة إلى عمل فني خالد";
 
         document.getElementById("heroText").innerHTML =
@@ -28,6 +30,7 @@ function toggleLanguage() {
         document.documentElement.dir = "ltr";
 
         document.getElementById("heroTitle").innerHTML =
+
             "Where the beauty of every moment becomes a timeless work of art.";
 
         document.getElementById("heroText").innerHTML =
