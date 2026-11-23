@@ -14,77 +14,47 @@ body{
     color:#ffffff;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 
 nav{
-
     position:fixed;
     top:0;
     left:0;
-
     width:100%;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:20px 50px;
-
     background:rgba(0,0,0,.55);
-
     backdrop-filter:blur(10px);
-
     z-index:1000;
-
 }
 
 .logo{
-
     font-size:24px;
-
     font-weight:bold;
-
     color:#f4c0dd;
-
-    text-shadow:
-    0 3px 15px rgba(244,192,221,.35);
-
 }
 
 nav ul{
-
     display:flex;
-
     list-style:none;
-
     gap:30px;
-
 }
 
 nav a{
-
     text-decoration:none;
-
-    color:white;
-
+    color:#c8aa6e;
     transition:.3s;
-
 }
 
 nav a:hover{
-
-    color:#c8aa6e;
-
+    color:white;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
-
     height:100vh;
 
     background:
@@ -99,11 +69,8 @@ nav a:hover{
     background-repeat:no-repeat;
 
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:center;
 
     text-align:center;
@@ -111,79 +78,43 @@ nav a:hover{
     padding:20px;
 
     position:relative;
-
     overflow:hidden;
-
 }
 
 .hero h2{
-
     font-size:58px;
-
     max-width:900px;
-
     line-height:1.2;
-
     margin-bottom:25px;
-
     color:#f4c0dd;
-
-    text-shadow:
-    0 5px 25px rgba(0,0,0,.6);
-
 }
 
 .hero p{
-
     font-size:20px;
-
     color:#f0f0f0;
-
     margin-bottom:35px;
-
 }
 
-/* =========================
-   BUTTON
-========================= */
-
 .explore-btn{
-
     display:inline-block;
-
     padding:12px 28px;
-
     background:#c8aa6e;
-
     color:white;
-
     text-decoration:none;
-
     border-radius:40px;
-
     transition:.3s;
-
 }
 
 .explore-btn:hover{
-
-    transform:translateY(-4px);
-
     background:#d6b97f;
-
 }
 
-/* =========================
-   LIGHT EFFECT
-========================= */
+/* LIGHT EFFECT */
 
 .light-effect{
-
     position:absolute;
-
     top:0;
     left:-40%;
-
     width:30%;
     height:100%;
 
@@ -196,190 +127,133 @@ nav a:hover{
     );
 
     transform:skewX(-20deg);
-
     animation:lightMove 7s infinite;
-
 }
 
-/* =========================
-   COLLECTIONS
-========================= */
+/* COLLECTIONS */
 
 .collections{
-
     padding:120px 80px;
-
     background:#111;
-
 }
 
 .collections h2{
-
     text-align:center;
-
-    font-size:42px;
-
-    margin-bottom:60px;
-
-    color:white;
-
+    font-size:30px;
+    font-weight:500;
+    letter-spacing:2px;
+    color:#c8aa6e;
+    margin-bottom:50px;
 }
 
 .collection-grid{
-
     display:grid;
-
     grid-template-columns:repeat(2,1fr);
-
     gap:30px;
-
     max-width:1200px;
-
     margin:auto;
-
 }
 
 .collection-card{
-
     background:#1b1b1b;
-
-    padding:40px;
-
     border-radius:20px;
-
+    overflow:hidden;
     border:1px solid transparent;
-
-    transition:.3s;
-
+    transition:.4s;
     cursor:pointer;
-
 }
 
-.collection-card:hover{
-
-    transform:translateY(-8px);
-
-    border-color:#c8aa6e;
-
-    box-shadow:
-    0 15px 35px rgba(0,0,0,.4);
-
+.collection-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    transition:.5s;
 }
 
 .collection-card h3{
-
     color:#c8aa6e;
-
-    margin-bottom:15px;
-
-    font-size:28px;
-
+    font-size:22px;
+    margin:20px 25px 10px;
 }
 
 .collection-card p{
-
-    color:#cfcfcf;
-
-    line-height:1.6;
-
+    color:#f0f0f0;
+    font-size:15px;
+    margin:0 25px 25px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+.collection-card:hover{
+    transform:translateY(-8px);
+    border-color:#c8aa6e;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.collection-card:hover img{
+    transform:scale(1.05);
+}
+
+/* FOOTER */
 
 footer{
-
     background:#0f0f0f;
-
     border-top:1px solid #c8aa6e;
-
     text-align:center;
-
     padding:18px;
-
 }
 
 footer p{
-
     color:#c8aa6e;
-
     font-size:12px;
-
 }
 
-/* =========================
-   RTL
-========================= */
+/* RTL */
 
 html[dir="rtl"]{
-
     text-align:right;
-
 }
 
 html[dir="rtl"] nav ul{
-
     flex-direction:row-reverse;
-
 }
 
-html[dir="rtl"] .hero{
-
-    direction:rtl;
-
-}
-
-/* =========================
-   ANIMATIONS
-========================= */
+/* ANIMATION */
 
 @keyframes lightMove{
 
     0%{
-
         left:-40%;
-
     }
 
     100%{
-
         left:140%;
-
     }
 
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:768px){
 
     nav{
-
         flex-direction:column;
-
         gap:15px;
-
     }
 
     .hero h2{
-
         font-size:38px;
-
     }
 
     .collection-grid{
-
         grid-template-columns:1fr;
-
     }
 
     .collections{
-
         padding:80px 25px;
-
     }
+
+}
+
 
 }
